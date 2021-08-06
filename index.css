@@ -1,0 +1,59 @@
+.leftColom{
+    width: 30s0px;
+    height: 700px;
+   float: left;
+   background-color : rgb(243, 243, 243);
+    border: 1px solid black;
+
+}
+
+
+
+#theGame{
+    
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 25px; 
+    gap: 10%;
+    
+
+}
+
+.btn{
+    padding-bottom:1%
+}
+
+.card{
+
+    width: 90%;
+}
+
+#something{
+margin-bottom: 0%;
+padding-bottom: 1%;
+
+}
+/* this calls out all of the buttons with the class name givin, holy crap, i love google <3*/
+.btn-danger{
+    margin-bottom: 3px;
+
+}
+
+#ules-button{
+    float: right;
+}
+
+.btn-secondary{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#les-button{
+
+float: right;
+
+
+}
+
+

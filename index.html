@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pain Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <script id="scare" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- this makes the advirtisement colom you see on the left of the screen-->
+
+<div class="leftColom">
+
+  <div id="ad" class="card" style="width: 18rem;">
+    <img id="orang" src="https://cdn.discordapp.com/attachments/728799893518286888/872209241606340658/image0.jpg" class="card-img-top" alt="hide pain">
+    <div class="card-body">
+      <h5 class="card-title">God, why did I make this????</h5>
+      <a href="https://youtu.be/j5a0jTc9S10">Find out here</a>
+    </div>
+  </div>
+
+  <div id="ad" class="card" style="width: 18rem;">
+    <img id="orang" src="data:image/jpeg;base64,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" class="card-img-top" alt="ther">
+    <div class="card-body">
+      <h5 class="card-title">Need therapy after this life changing experience?</h5>
+      <a href="https://youtu.be/oCQLL9QG9q0">click here</a>
+    </div>
+  </div>
+  
+</div> 
+
+
+
+   <!-- title bit at the top with a button that leads to the rules, what else can i say-->
+<div id="something" class="jumbotron">
+  <button onClick="window.location.reload();" type="button"  id="ules-button" class="btn btn-outline-info">Reset</button>
+  <h1 class="text-center">The Pain Game</h1>
+  <button type="button"  id="les-button" class="btn btn-outline-info">score</button>
+  
+  <p id="sigh" class="text-center">Why the heck are you playing this?</p>   
+  <p class="text-center">
+    <button type="button"  id="rules-button" class="btn btn-outline-info">Rules</button>
+  </p>
+</div>
+
+<br> 
+
+<!-- send help, like holy crap this is a lot of buttons, just end my suffering-->
+<div id="theGame" class="jumbotron">
+<p class="text-center">
+  <button id="1" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="2" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="3" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="4" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="5" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="6" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="7" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="8" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="9" type = "button" class="btn btn-danger">Nightmare</button>  
+  <button id="10" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="11" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="12" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="13" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="14" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="15" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="16" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="17" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="18" type = "button" class="btn btn-danger">Nightmare</button>  
+  <button id="19" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="20" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="21" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="22" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="23" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="24" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="25" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="26" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="27" type = "button" class="btn btn-danger">Nightmare</button>  
+  <button id="28" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="29" type = "button" class="btn btn-danger">Nightmare</button>  
+  <button id="30" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="31" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="32" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="33" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="34" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="35" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="36" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="37" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="38" type = "button" class="btn btn-danger">Nightmare</button>  
+  <button id="39" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="40" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="41" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="42" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="43" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="44" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="45" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="46" type = "button" class="btn btn-danger">Nightmare</button>
+  <button id="47" type = "button" class="btn btn-danger">Nightmare</button>  
+</p>
+</div>
+
+<script type="text/javascript">
+
+
+var counter = 0;
+
+
+$(document).ready (function(){
+
+  // random number gerator here, but i mean, thats pretty easy to see so...
+var theButton = [Math.ceil(Math.random() * 47)];
+
+// this activates the rules button, but who cares about rules???
+$("#rules-button").on("click", function() {
+     alert("heres the rules\n\n1. Press the buttons below the title\n\n2. one of the buttons will activate the tens unit, however its random everytime\n\n3. try not to get shocked\n\n4. the game is over when you get shocked\n\n5. try to get as many points as you can \n\n important stuff about the tens unit\n\n dont put the tens unit directly on top of any bone you, or near your heart ya dingus\n\nthis could damage the bone/ pass electricity through your heart, which is bad :/");
+    });
+
+    
+
+    $("#les-button").on("click", function() {
+     alert("score: " + counter);
+    });
+    
+  $(".btn-danger").on("click", function() {
+
+    
+     
+    if(this.id == theButton){
+
+      alert("boo");
+      
+      var personImage = $("<img>");
+
+// Giving the image tag an src attribute of a proprty pulled off the
+// result item
+personImage.attr("src", "https://i.kym-cdn.com/photos/images/facebook/001/950/348/e85.jpg");
+
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#scare').trigger('focus')
+})
+
+     
+      
+    }
+    else{
+  $(this).addClass('btn btn-secondary');
+$(this).removeClass('btn btn-danger');
+counter++;
+    };
+    
+    });
+  });
+
+</script>
+</body>
+</html>
